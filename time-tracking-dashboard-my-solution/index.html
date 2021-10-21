@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="main-main-div">
+    <div id="main-div">
+      <div id="profile-div" class="big-card">
+        <img src="images/image-jeremy.png" alt="Jeremy">
+        <p>Report for <br><span>Jeremy Robson</span></p>
+      </div>
+      <div id="options" class="small-card">
+        <a class="data-changer active" data-id="daily">Daily</a>
+        <a class="data-changer" data-id="weekly">Weekly</a>
+        <a class="data-changer" data-id="monthly">Monthly</a> 
+      </div>
+      
+      
+      <div id="work-support" class="support-div small-card">
+        <img class="support-icons" src="/images/icon-work.svg" alt="">
+        <div id="work-div" data-id="work" class="time-div daily small-card">
+          <div class="activity-div">
+            Work
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <h2 class="time-taken">5hrs</h2>  <!-- daily -->
+          <p class="previous-time">Yesterday - 7hrs</p>  <!-- daily -->
+        </div>  
+      </div>
+      
+      <div id="play-support" class="support-div small-card">
+        <img class="support-icons" src="/images/icon-play.svg" alt="">
+        <div id="play-div" data-id="play" class="time-div daily small-card">
+          <div class="activity-div">
+            Play
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <h2 class="time-taken">1hr</h2>  <!-- daily -->
+          <p class="previous-time">Yesterday - 2hrs</p>  <!-- daily -->
+        </div>  
+      </div>
+      
+      <div id="study-support" class="support-div small-card">
+        <img class="support-icons" src="/images/icon-study.svg" alt="">
+        <div id="study-div" data-id="study" class="time-div daily small-card">
+          <div class="activity-div">
+            Study
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <h2 class="time-taken">0hrs</h2>  <!-- daily -->
+          <p class="previous-time">Yesterday - 1hr</p>  <!-- daily -->
+        </div>  
+      </div>
+      
+      <div id="exercise-support" class="support-div small-card">
+        <img class="support-icons" src="/images/icon-exercise.svg" alt="">
+        <div id="exercise-div" data-id="exercise" class="time-div daily small-card">
+          <div class="activity-div">
+            Exercise
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <h2 class="time-taken">1hr</h2>  <!-- daily -->
+          <p class="previous-time">Yesterday - 1hr</p>  <!-- daily -->
+        </div>  
+      </div>
+      
+      <div id="social-support" class="support-div small-card">
+        <img class="support-icons" src="/images/icon-social.svg" alt="">
+        <div id="social-div" data-id="social" class="time-div daily small-card">
+          <div class="activity-div">
+            Social
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <h2 class="time-taken">1hr</h2>  <!-- daily -->
+          <p class="previous-time">Yesterday - 3hrs</p>  <!-- daily -->
+        </div>  
+      </div>
+      
+      <div id="self-support" class="support-div small-card">
+        <img class="support-icons" src="/images/icon-self-care.svg" alt="">
+        <div id="self-div" data-id="self care" class="time-div daily small-card">
+          <div class="activity-div">
+            Self Care
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <h2 class="time-taken">0hrs</h2>  <!-- daily -->
+          <p class="previous-time">Yesterday - 1hr</p>  <!-- daily -->
+        </div>  
+      </div>
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/roldanjohn" target="_blank">John Patrick E. Roldan</a>.
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
