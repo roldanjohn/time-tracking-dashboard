@@ -127,6 +127,7 @@ body{
 .support-icons{
   position: absolute;
   right: 10px;
+  z-index: 3;
 }
 #work-support{
   background-color: #FF8B64;
